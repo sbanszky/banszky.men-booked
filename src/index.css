@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 65, 0.8);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    color: #4F46E5;
+  }
+  50% {
+    color: #A855F7;
+  }
+  100% {
+    color: #4F46E5;
+  }
+}
+
+@keyframes rainbowHeart {
+  0% { color: #ff0000; }
+  16.666% { color: #ff8000; }
+  33.333% { color: #ffff00; }
+  50% { color: #00ff00; }
+  66.666% { color: #0080ff; }
+  83.333% { color: #8000ff; }
+  100% { color: #ff0000; }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.3s ease-in-out infinite;
+}
+
+.animate-color-shift {
+  animation: colorShift 3s ease-in-out infinite;
+}
+
+.animate-rainbow {
+  animation: rainbowHeart 3s linear infinite;
+}
